@@ -10,6 +10,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      MINIO_ACCESS_KEY: dummy
+      MINIO_SECRET_KEY: dummy
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
